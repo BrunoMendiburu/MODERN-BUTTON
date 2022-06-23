@@ -6,7 +6,7 @@
 body {
     width: 100%;
     height: 100vh;
-    background: gray;
+    background: #000;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -26,7 +26,7 @@ body {
 
  .container span {
     color: white;
-    font-size: 5em;
+    font-size: 3em;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     z-index: 1;
@@ -35,11 +35,11 @@ body {
  .container::before{
      content: '';
      position: absolute;
-     width: 150px;
+     width: 110px;
      height: 600px; 
      left: 75px;
      top: -100px;
-     background: linear-gradient(#F78D3F,#D63FF7);
+     background: linear-gradient(#44FFE0,#1946ED);
      animation: animate 10s linear infinite;
  }
 
