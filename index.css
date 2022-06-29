@@ -1,62 +1,61 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    background: #000;
-    display: grid;
-    justify-content: center;
-    align-content: center;
+  width: 100%;
+  height: 100vh;
+  background: rgb(22, 22, 22);
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 
 .container {
-      width: 300px;
-      height: 400px;
-      background: #000;
-      border-radius: 20px;
-      display: grid;
-      justify-content: center;
-      align-content: center;
-      position: relative;
-      overflow: hidden;
-} 
+  width: 300px;
+  height: 400px;
+  background: #000;
+  border-radius: 20px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  overflow: hidden;
+}
 
- .container span {
-    color: white;
-    font-size: 3em;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    z-index: 1;
- }
+.container span {
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 1;
+}
 
- .container::before{
-     content: '';
-     position: absolute;
-     width: 110px;
-     height: 600px; 
-     left: 75px;
-     top: -100px;
-     background: linear-gradient(#44FFE0,#1946ED);
-     animation: animate 10s linear infinite;
- }
+.container::before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 600px;
+  left: 75px;
+  top: -100px;
+  background: linear-gradient(#44ffe0, #1946ed);
+  animation: animate 10s linear infinite;
+}
 
- @keyframes animate {
-     0%{
-         transform: rotate(0deg);
-     }
-     100%{
-        transform: rotate(360deg);
-    }
- }
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
- .container::after {
-     content: '';
-     position: absolute;
-     inset: 5px;
-     background: black;
-     border-radius: 18px;
-
- }
+.container::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  background: black;
+  border-radius: 18px;
+}
